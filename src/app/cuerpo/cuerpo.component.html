@@ -1,0 +1,17 @@
+<h4 [ngClass]="estilo" class="text-center" style="font-style:bold;" >Agregar<h4>
+    <br>
+
+<div class="text-center">
+    <input [(ngModel)]="estudiante" type="text"/>
+    <button style="color: rgb(0, 0, 0);" (click)="agregarestudiante()">Agregar alumno </button>
+</div>
+
+<div class="text-center">
+    <p>{{estudiante}}</p>
+    <ol>
+        <li 
+        *ngFor="let elemento of miLista"
+        >{{ elemento }}
+    </li>
+    </ol>
+</div>
